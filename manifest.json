@@ -1,0 +1,20 @@
+{
+  "_metadata": { "major_version": 2, "minor_version": 1 },
+  "display_information": {
+    "name": "ZabbixAlert",
+    "description": "Send Zabbix alerts to Slack channels or DMs",
+    "background_color": "#4A154B"
+  },
+  "features": {
+    "bot_user": { "display_name": "ZabbixAlert" }
+  },
+  "oauth_config": {
+    "scopes": {
+      "bot": ["chat:write", "groups:write", "im:write"]
+    }
+  },
+  "settings": {
+    "socket_mode_enabled": false,
+    "interactivity": { "is_enabled": false }
+  }
+}
