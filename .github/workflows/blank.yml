@@ -1,0 +1,36 @@
+# .github/workflows/slack-manifest.yml
+name: Slack App Deploy
+
+on:
+  push:
+    paths:
+      - 'slack-zabbix-integration/manifest.json'  # فقط وقتی این فایل تغییر کنه اجرا میشه
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v3
+
+    - name: Install curl & jq
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y curl jq
+
+    - name: Deploy Slack Manifest
+      env:
+        SLACK_TOKEN: ${{ secrets.SLACK_ADMIN_TOKEN }}
+      run: |
+        MANIFEST=$(cat slack-app/manifest.json)
+        RESPONSE=$(curl -s -X POST \
+          -H "Authorization: Bearer $SLACK_TOKEN" \
+          -H "Content-Type: application/json" \
+          -d "$MANIFEST" \
+          https://slack.com/api/apps.manifest.update)
+        echo "$RESPONSE" | jq
+        if [ "$(echo $RESPONSE | jq -r .ok)" != "true" ]; then
+          echo "Slack manifest update failed!"
+          exit 1
+        fi
