@@ -43,7 +43,7 @@
 
 ---
 
-## 2️⃣ تنظیم ⚙️ OAuth & Permissions
+## 2️⃣ تنظیم  OAuth & Permissions
 از منوی اپ وارد **OAuth & Permissions** شوید و اسکوپ‌های زیر را به Bot اضافه کنید:
 
 <p align="center">
@@ -106,11 +106,15 @@
 ---
 
 ## ✅ چک‌لیست سریع
-- [x] ✨ ساخت اپ در https://api.slack.com/apps → **From scratch**
-- [x] 🔑 تنظیم اسکوپ‌های Bot (`chat:write`, `groups:write`, `im:write`)
-- [x] 📥 نصب اپ و گرفتن **Bot User OAuth Token**
-- [x] 🏷️ ساخت کانال و Invite کردن اپ
-- [x] 🔗 قرار دادن Token و Channel ID در Zabbix
+<p align="right">
+
+- [x] ✨ ساخت اپ در https://api.slack.com/apps → **From scratch**  
+- [x] 🔑 تنظیم اسکوپ‌های Bot (`chat:write`, `groups:write`, `im:write`)  
+- [x] 📥 نصب اپ و گرفتن **Bot User OAuth Token**  
+- [x] 🏷️ ساخت کانال و Invite کردن اپ  
+- [x] 🔗 قرار دادن Token و Channel ID در Zabbix  
+
+</p>
 
 ---
 
