@@ -23,7 +23,7 @@ jobs:
       env:
         SLACK_TOKEN: ${{ secrets.SLACK_ADMIN_TOKEN }}
       run: |
-        MANIFEST=$(cat slack-app/manifest.json)
+        MANIFEST=$(cat manifest.json)
         RESPONSE=$(curl -s -X POST \
           -H "Authorization: Bearer $SLACK_TOKEN" \
           -H "Content-Type: application/json" \
