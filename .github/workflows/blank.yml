@@ -4,7 +4,7 @@ name: Slack App Deploy
 on:
   push:
     paths:
-      - 'slack-zabbix-integration/manifest.json'  # فقط وقتی این فایل تغییر کنه اجرا میشه
+      - 'manifest.json'  # فقط وقتی این فایل تغییر کنه اجرا میشه
 
 jobs:
   deploy:
