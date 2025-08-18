@@ -6,12 +6,12 @@
 
 ## 📑 فهرست مطالب
 - [1️⃣ ساخت اپ در Slack](#1️⃣-ساخت-اپ-در-slack)
-- [2️⃣ تنظیم OAuth & Permissions](#2️⃣-تنظیم-️oauth--permissions)
+- [2️⃣ تنظیم ⚙️ OAuth & Permissions](#2️⃣-تنظیم-️-oauth--permissions)
 - [3️⃣ نصب اپ روی Workspace](#3️⃣-نصب-اپ-روی-workspace)
 - [4️⃣ ساخت کانال و اضافه‌کردن اپ](#4️⃣-ساخت-کانال-و-اضافهکردن-اپ)
 - [5️⃣ اتصال Zabbix به Slack](#5️⃣-اتصال-zabbix-به-slack)
-- [✅ چک‌لیست سریع](#✅-چکلیست-سریع)
-- [🛠️ مشکلات رایج](#🛠️-مشکلات-رایج)
+- [✅ چک‌لیست سریع](#-چکلیست-سریع)
+- [🛠️ مشکلات رایج](#️-مشکلات-رایج)
 
 ---
 
@@ -43,7 +43,7 @@
 
 ---
 
-## 2️⃣ تنظیم  OAuth & Permissions
+## 2️⃣ تنظیم ⚙️ OAuth & Permissions
 از منوی اپ وارد **OAuth & Permissions** شوید و اسکوپ‌های زیر را به Bot اضافه کنید:
 
 <p align="center">
@@ -80,13 +80,13 @@
 ## 4️⃣ ساخت کانال و اضافه‌کردن اپ
 1. در Slack یک کانال جدید برای اعلان‌ها بسازید (📢 Public یا 🔒 Private).
    <p align="center">
-     <img src="https://github.com/user-attachments/assets/b9e61270-4d37-4a69-8b36-b69768f9633e" alt="channel1" width="600" />
+     <img src="https://github.com/user-attachments/assets/b9e61270-4d37-4a69-8b36-b69768f9633e" alt="channel" width="500" />
    </p>
 
 2. اپ را به کانال Invite کنید:
    - از **Channel Details → Integrations → Add an app** استفاده کنید.
      <p align="center">
-       <img src="https://github.com/user-attachments/assets/a18409ff-3352-4de0-90b2-901bcd331396" alt="channel2" width="600" />
+       <img src="https://github.com/user-attachments/assets/a18409ff-3352-4de0-90b2-901bcd331396" alt="add-app" width="500" />
      </p>
 
    - یا در کادر پیام بنویسید ⌨️ `@ZabbixAlert` و گزینه *Invite to channel* را بزنید.
@@ -98,10 +98,9 @@
 2. **Channel ID** مقصد را مشخص کنید:
    - 📌 استفاده از **Channel ID** (به‌جای نام کانال) توصیه می‌شود تا در صورت تغییر نام کانال، اتصال از کار نیفتد.
    - برای گرفتن Channel ID می‌توانید از Slack API (`conversations.list`) یا از جزئیات کانال استفاده کنید.
-
-   <p align="center">
-     <img src="https://github.com/user-attachments/assets/d855cb0d-54ba-4e5d-a7c2-904a4eaf38b6" alt="channelid" width="600" />
-   </p>
+     <p align="center">
+       <img src="https://github.com/user-attachments/assets/d855cb0d-54ba-4e5d-a7c2-904a4eaf38b6" alt="channel-id" width="600" />
+     </p>
 
 ---
 
