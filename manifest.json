@@ -1,12 +1,12 @@
 {
   "_metadata": { "major_version": 2, "minor_version": 1 },
   "display_information": {
-    "name": "ZabbixAlert",
+    "name": "ZabbixAlertNew",
     "description": "Send Zabbix alerts to Slack channels or DMs",
     "background_color": "#4A154B"
   },
   "features": {
-    "bot_user": { "display_name": "ZabbixAlert" }
+    "bot_user": { "display_name": "ZabbixAlertNew" }
   },
   "oauth_config": {
     "scopes": {
