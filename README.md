@@ -6,13 +6,22 @@
 
 ## 1️⃣ ساخت اپ در Slack
 1. به 🌐 [Slack API Apps](https://api.slack.com/apps) بروید.
-2. روی **➕ Create New App** کلیک کنید.
-3. دو گزینه نمایش داده می‌شود:
+   ![2](https://github.com/user-attachments/assets/d1e2c555-d3ce-41ca-bffd-d4a02117038f)
+
+3. روی **➕ Create New App** کلیک کنید.
+   <img width="1106" height="235" alt="image" src="https://github.com/user-attachments/assets/48a90475-fa7c-4ebf-84c6-bd18d099fb89" />
+
+5. دو گزینه نمایش داده می‌شود:
    - **📄 From scratch**: ساخت دستی اپ (مناسب شروع ساده یا تنظیمات سفارشی).
    - **⚡ From a manifest**: ساخت اپ از روی فایل YAML/JSON شامل همه تنظیمات (سریع، قابل نسخه‌بندی).
-4. گزینه **📄 From scratch** را انتخاب کنید.
-5. یک **✏️ App Name** دلخواه (مثلاً `ZabbixAlert`) وارد کنید.
-6. Workspace مقصد را انتخاب کنید و اپ را بسازید.
+     ![3](https://github.com/user-attachments/assets/4bd2c725-2108-43e0-899d-cd266f04b632)
+
+6. گزینه **📄 From scratch** را انتخاب کنید.
+7. یک **✏️ App Name** دلخواه (مثلاً `ZabbixAlert`) وارد کنید.
+   8. Workspace مقصد را انتخاب کنید و اپ را بسازید.
+   <img width="517" height="501" alt="image" src="https://github.com/user-attachments/assets/129c1b11-2463-43ec-8ff9-8a7cfeab9421" />
+
+
 
 ---
 
